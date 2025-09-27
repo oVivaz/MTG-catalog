@@ -97,12 +97,12 @@ with tab2:
     # Configurações de exibição
     col1, col2, col3 = st.columns([1, 1, 1])
     with col1:
-        cols_per_row = st.selectbox("Cartas por linha:", [2, 3, 4, 5, 6, 7, 8, 9], index=1)
+        cols_per_row = st.selectbox("Cartas por linha:", [2, 3, 4, 5, 6, 7, 8, 9, 10], index=1)
     with col2:
         sort_by = st.selectbox("Ordenar por:", 
                               ['Nome', 'Preço (Maior)', 'Preço (Menor)', 'Set', 'Raridade'])
     with col3:
-        items_per_page = st.selectbox("Cartas por página:", [20, 50, 100, 300, 500, 1000], index=0)
+        items_per_page = st.selectbox("Cartas por página:", [20, 50, 100, 300], index=0)
     
     # Opção para mostrar imagens
     show_images = st.checkbox("📸 Mostrar imagens das cartas", value=True)
