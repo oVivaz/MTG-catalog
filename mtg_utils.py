@@ -5,7 +5,7 @@ from pathlib import Path
 
 def load_data():
     """Carrega os dados da coleção MTG"""
-    file_path = Path(r"C:\Users\Vito\MTG_Project\MTG_SCRY_PYTHON.xlsx")
+    file_path = Path("MTG_SCRY_PYTHON.xlsx")
     df = pd.read_excel(file_path, sheet_name='MTG_SCRY_PYTHON')
     
     # Processamentos que fizemos
